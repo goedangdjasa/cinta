@@ -1,1 +1,3 @@
 # cinta
+
+Dunia ini membosankan
