@@ -1,0 +1,2666 @@
+.sectionsli{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsli{
+  min-height: 5px;
+}
+.over-hidesli{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsli:checked + label,
+.checkboxsli:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3xxTJ44wfrs2a9RgltWBGPmr2Qh-vDOrHknvSgMCRV9nHdKAxDS7dUlwgDR33ynxNBPKdgbbxA6eUdpLHKVzRYV7JNxvY1GG_I0fnq9jYzQi1HfQjJaQ158LcIi66N6KQrINyUBdILwb6cjVUycqwVI_Z1zipaKXz8xiG5DWznaB98_10PE4Rb6f9_qJq/s600/brosur%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsli.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAwKYZY8BZo-R_SKr2rCnY1Jr6tMSA4_njX7OjwUns4_il3hxo6pS1j1cnXJktKbRObtYmfWV-sO_dRyRRUaeLxAvRJkJyO208aFk3ID_LTfj_2N8SmLLsFzoyJkrA_P1e7Zu_MGqsKRWsZC49AUppuo0onG5GuXzy2UHL3Pwt4tuQYPKXHtgMSWF_YWUr/s600/brosur%202.png&#39;);
+}
+.checkboxsli.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinx_5UZaJVc6p_nKmVMBsY9VucxtIzVT6bFKxIB2rAF5jBTXppzr7n-XDuSIOezJWJzuHGOy6inqiwigJ43Ta03sRfIaYfoR5KGB8gWRwxTAKfyU-E71M6_pjwkNYAnM068GXiGQTd6Z57VDNJwWovSz6b22q8lVox1mksTxZsPWlvp5zsMjYJ9CmARu1x/s600/brosur%203.png&#39;);
+}
+.checkboxsli.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsli:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.slider-height-padding {
+  padding-top: 440px;
+}
+
+ul.sli {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sli li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3xxTJ44wfrs2a9RgltWBGPmr2Qh-vDOrHknvSgMCRV9nHdKAxDS7dUlwgDR33ynxNBPKdgbbxA6eUdpLHKVzRYV7JNxvY1GG_I0fnq9jYzQi1HfQjJaQ158LcIi66N6KQrINyUBdILwb6cjVUycqwVI_Z1zipaKXz8xiG5DWznaB98_10PE4Rb6f9_qJq/s600/brosur%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sli li span {
+  mix-blend-mode: difference;
+}
+ul.sli li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAwKYZY8BZo-R_SKr2rCnY1Jr6tMSA4_njX7OjwUns4_il3hxo6pS1j1cnXJktKbRObtYmfWV-sO_dRyRRUaeLxAvRJkJyO208aFk3ID_LTfj_2N8SmLLsFzoyJkrA_P1e7Zu_MGqsKRWsZC49AUppuo0onG5GuXzy2UHL3Pwt4tuQYPKXHtgMSWF_YWUr/s600/brosur%202.png&#39;);
+}
+ul.sli li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinx_5UZaJVc6p_nKmVMBsY9VucxtIzVT6bFKxIB2rAF5jBTXppzr7n-XDuSIOezJWJzuHGOy6inqiwigJ43Ta03sRfIaYfoR5KGB8gWRwxTAKfyU-E71M6_pjwkNYAnM068GXiGQTd6Z57VDNJwWovSz6b22q8lVox1mksTxZsPWlvp5zsMjYJ9CmARu1x/s600/brosur%203.png&#39;);
+}
+ul.sli li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsli.frst:checked ~ ul.sli li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsli.scnd:checked ~ ul.sli li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsli.thrd:checked ~ ul.sli li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsli.foth:checked ~ ul.sli li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .slider-height-padding {
+    padding-top: 340px;
+  }
+  ul.sli li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-height-padding {
+    padding-top: 240px;
+  }
+  ul.sli li {
+    height: 200px;
+  }
+}
+    
+    
+    
+    [type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl1:checked + label,
+.checkboxsl1:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2Im_NpWddW8ipWkkOS8HVnQVE_m9TZrD7N_OF8QvhF-MSh8X3mryAGEjoGoXkbrNetlTwbp9GG3rfor9aklzkVz0qgIuMJIRuShLQbxvs7e1fYD2O7Jw1g5hj-lIBacObPIGa5YJVV3jYcY8z34B4F83KD31t3KsOfKSLlZ8vOw2uHf8P4T6WrJ4Q6czJ/s600/k%20nama%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl1.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0GThLmtNY-uozsK3hHLk5h64gSAFZsKDirUrdtrKoqleblcVJn8dM35QZ7fCSxdG64G9hdyRcXqmwMXtRUIpqg43UjS1wEGprhr_CQnUTzOdMGLkuNeA1cwiKFDhJ01iyB0bzRaF6oZlftyF6R98VJSdsEhioM_2iHLsCtlV8jys87XHGRptW-BTttmtK/s600/k%20nama%202.png&#39;);
+}
+.checkboxsl1.thrd + label{
+  background-image: url(&#39;https://assets.codepen.io/1462889/sl3.jpg&#39;);
+}
+.checkboxsl1.foth + label{
+  background-image: url(&#39;https://assets.codepen.io/1462889/sl4.jpg&#39;);
+}
+
+.checkboxsl1:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.slider-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl1 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2Im_NpWddW8ipWkkOS8HVnQVE_m9TZrD7N_OF8QvhF-MSh8X3mryAGEjoGoXkbrNetlTwbp9GG3rfor9aklzkVz0qgIuMJIRuShLQbxvs7e1fYD2O7Jw1g5hj-lIBacObPIGa5YJVV3jYcY8z34B4F83KD31t3KsOfKSLlZ8vOw2uHf8P4T6WrJ4Q6czJ/s600/k%20nama%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl1 li span {
+  mix-blend-mode: difference;
+}
+ul.sl1 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0GThLmtNY-uozsK3hHLk5h64gSAFZsKDirUrdtrKoqleblcVJn8dM35QZ7fCSxdG64G9hdyRcXqmwMXtRUIpqg43UjS1wEGprhr_CQnUTzOdMGLkuNeA1cwiKFDhJ01iyB0bzRaF6oZlftyF6R98VJSdsEhioM_2iHLsCtlV8jys87XHGRptW-BTttmtK/s600/k%20nama%202.png&#39;);
+}
+ul.sl1 li:nth-child(3) {
+  background-image: url(&#39;https://assets.codepen.io/1462889/sl3.jpg&#39;);
+}
+ul.sl1 li:nth-child(4) {
+  background-image: url(&#39;https://assets.codepen.io/1462889/sl4.jpg&#39;);
+}
+
+
+.checkboxsl1.frst:checked ~ ul.sl1 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl1.scnd:checked ~ ul.sl1 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl1.thrd:checked ~ ul.sl1 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl1.foth:checked ~ ul.sl1 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .slider-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl1 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl1 li {
+    height: 200px;
+  }
+}
+
+    
+    
+    #igs {
+  padding: 10px;
+  background: #efefef;
+  border: none;
+  border-radius: 5%;
+  color: #444;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+              -6px -6px 10px rgba(255, 255, 255, .5),
+              6px 6px 8px rgba(255, 255, 255, .075),
+              6px 6px 10px rgba(0, 0, 0, .15);
+}
+#igs:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+              -2px -2px 4px rgba(255, 255, 255, .4),
+              2px 2px 2px rgba(255, 255, 255, .05),
+              2px 2px 4px rgba(0, 0, 0, .1);
+}
+#igs:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+              inset -2px -2px 4px rgba(255, 255, 255, .5),
+              inset 2px 2px 2px rgba(255, 255, 255, .075),
+              inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+    
+    
+    
+    .sectionsl2{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl2{
+  min-height: 5px;
+}
+.over-hidesl2{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl2:checked + label,
+.checkboxsl2:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3xxTJ44wfrs2a9RgltWBGPmr2Qh-vDOrHknvSgMCRV9nHdKAxDS7dUlwgDR33ynxNBPKdgbbxA6eUdpLHKVzRYV7JNxvY1GG_I0fnq9jYzQi1HfQjJaQ158LcIi66N6KQrINyUBdILwb6cjVUycqwVI_Z1zipaKXz8xiG5DWznaB98_10PE4Rb6f9_qJq/s600/brosur%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl2.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAwKYZY8BZo-R_SKr2rCnY1Jr6tMSA4_njX7OjwUns4_il3hxo6pS1j1cnXJktKbRObtYmfWV-sO_dRyRRUaeLxAvRJkJyO208aFk3ID_LTfj_2N8SmLLsFzoyJkrA_P1e7Zu_MGqsKRWsZC49AUppuo0onG5GuXzy2UHL3Pwt4tuQYPKXHtgMSWF_YWUr/s600/brosur%202.png&#39;);
+}
+.checkboxsl2.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinx_5UZaJVc6p_nKmVMBsY9VucxtIzVT6bFKxIB2rAF5jBTXppzr7n-XDuSIOezJWJzuHGOy6inqiwigJ43Ta03sRfIaYfoR5KGB8gWRwxTAKfyU-E71M6_pjwkNYAnM068GXiGQTd6Z57VDNJwWovSz6b22q8lVox1mksTxZsPWlvp5zsMjYJ9CmARu1x/s600/brosur%203.png&#39;);
+}
+.checkboxsl2.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsl2:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl2der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl2 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3xxTJ44wfrs2a9RgltWBGPmr2Qh-vDOrHknvSgMCRV9nHdKAxDS7dUlwgDR33ynxNBPKdgbbxA6eUdpLHKVzRYV7JNxvY1GG_I0fnq9jYzQi1HfQjJaQ158LcIi66N6KQrINyUBdILwb6cjVUycqwVI_Z1zipaKXz8xiG5DWznaB98_10PE4Rb6f9_qJq/s600/brosur%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl2 li span {
+  mix-blend-mode: difference;
+}
+ul.sl2 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAwKYZY8BZo-R_SKr2rCnY1Jr6tMSA4_njX7OjwUns4_il3hxo6pS1j1cnXJktKbRObtYmfWV-sO_dRyRRUaeLxAvRJkJyO208aFk3ID_LTfj_2N8SmLLsFzoyJkrA_P1e7Zu_MGqsKRWsZC49AUppuo0onG5GuXzy2UHL3Pwt4tuQYPKXHtgMSWF_YWUr/s600/brosur%202.png&#39;);
+}
+ul.sl2 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinx_5UZaJVc6p_nKmVMBsY9VucxtIzVT6bFKxIB2rAF5jBTXppzr7n-XDuSIOezJWJzuHGOy6inqiwigJ43Ta03sRfIaYfoR5KGB8gWRwxTAKfyU-E71M6_pjwkNYAnM068GXiGQTd6Z57VDNJwWovSz6b22q8lVox1mksTxZsPWlvp5zsMjYJ9CmARu1x/s600/brosur%203.png&#39;);
+}
+ul.sl2 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsl2.frst:checked ~ ul.sl2 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl2.scnd:checked ~ ul.sl2 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl2.thrd:checked ~ ul.sl2 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl2.foth:checked ~ ul.sl2 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl2der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl2 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl2der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl2 li {
+    height: 200px;
+  }
+}
+    
+    /* fsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+    
+   .sectionsl3{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl3{
+  min-height: 5px;
+}
+.over-hidesl3{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl3:checked + label,
+.checkboxsl3:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOE1fYYOEfOFCCm35AVOIhzsUCokZDzNwYA0bjsnuyYKGCg6HTaB-fn8kJ3Nj-LcHa5poG98RxawbWo8JDeGv0hPzWrEEakBNrvb_RYhUFEfVM6-oYll3GKVk-EDfxigWd8RlOReWQECM4cpSXkuyp-vyZU2PzHPaRboRc-P5zF_4YZotnn6uv0w3wd3hk/s600/b%20spiral%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl3.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvy71veQRmdELrBpYP7cSDTn5NqbNO8G8jbMBceRf_OXgAhUeIX25bs7-U1lbJ9oRLO8XRQ211oASzo1Zowxl0Z_X3VHumFY6FmB8HL_ggIpgFOzVp52ONaWb53zMX8npTFCJtR5ltlcwQ-ddFeFOf_OSzyl7wajLojRgcZjKuTDGbm7O5kzAvvfHRAoe7/s600/b%20spiral%202.png&#39;);
+}
+.checkboxsl3.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7Y4rpg764yq2rns6DS0z7Se0xXZCygy_CelpOY3x0Tccpe1hNOMEV1X0saLqOJrfvu1MfdAado49reHb3eEFpAChqiCWSWEwTYhsj_QSbchJFFkAmWKFXPLlVUqWn0wkKk1o9bYsWXdgpjfNIO4RRXrbHRvoS_8ieEy7rTB86yy7UYU7DXAC936c96DhD/s600/b%20spiral%203.png&#39;);
+}
+.checkboxsl3.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsl3:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl3der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl3 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOE1fYYOEfOFCCm35AVOIhzsUCokZDzNwYA0bjsnuyYKGCg6HTaB-fn8kJ3Nj-LcHa5poG98RxawbWo8JDeGv0hPzWrEEakBNrvb_RYhUFEfVM6-oYll3GKVk-EDfxigWd8RlOReWQECM4cpSXkuyp-vyZU2PzHPaRboRc-P5zF_4YZotnn6uv0w3wd3hk/s600/b%20spiral%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl3 li span {
+  mix-blend-mode: difference;
+}
+ul.sl3 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvy71veQRmdELrBpYP7cSDTn5NqbNO8G8jbMBceRf_OXgAhUeIX25bs7-U1lbJ9oRLO8XRQ211oASzo1Zowxl0Z_X3VHumFY6FmB8HL_ggIpgFOzVp52ONaWb53zMX8npTFCJtR5ltlcwQ-ddFeFOf_OSzyl7wajLojRgcZjKuTDGbm7O5kzAvvfHRAoe7/s600/b%20spiral%202.png&#39;);
+}
+ul.sl3 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7Y4rpg764yq2rns6DS0z7Se0xXZCygy_CelpOY3x0Tccpe1hNOMEV1X0saLqOJrfvu1MfdAado49reHb3eEFpAChqiCWSWEwTYhsj_QSbchJFFkAmWKFXPLlVUqWn0wkKk1o9bYsWXdgpjfNIO4RRXrbHRvoS_8ieEy7rTB86yy7UYU7DXAC936c96DhD/s600/b%20spiral%203.png&#39;);
+}
+ul.sl3 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsl3.frst:checked ~ ul.sl3 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl3.scnd:checked ~ ul.sl3 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl3.thrd:checked ~ ul.sl3 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl3.foth:checked ~ ul.sl3 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl3der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl3 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl3der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl3 li {
+    height: 200px;
+  }
+}
+    
+    
+    
+  
+    
+
+    /* sFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF */
+    
+    
+    
+    .sectionsl5{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl5{
+  min-height: 5px;
+}
+.over-hidesl5{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl5:checked + label,
+.checkboxsl5:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyjzk6SBLybwTMZGMxs9JJ2u-bdb6ZL2vFxLx1en8L65PzOI5Csm3IXmHNggFWWApsRzaxWE4XuaDZs7qaB23b33T1AIhsSkpSJ5FuzFLKxdhTpbis9KmbLel5Avdg6QSuDtmbxrwgcBcae6UqC9mBuYTUTUq9-rh86Md0xdegJGiaPur-wT0fepsw3oGJ/s1754/E%20-%20Money%20Custom%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl5.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqhgrllH5DCcCj5ZhjN48UwyYaWo-fMRe3xTkEjTSURaQPSl_sBxBy_o8_0FRwI7lxu7AX496iylfKFczOdSLXJu3OoYXwe8RlREByME0abH67HGFxdb7XFI_zVwHq9QlmgdCkEYTQSZ_T_9WNllxAIZzgYNxj4mInXy3x3aAKif7fQVEYIbI1D7D7VSDU/s1750/E%20-%20Money%20Custom%202.png&#39;);
+}
+.checkboxsl5.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+.checkboxsl5.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsl5:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl5der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl5 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyjzk6SBLybwTMZGMxs9JJ2u-bdb6ZL2vFxLx1en8L65PzOI5Csm3IXmHNggFWWApsRzaxWE4XuaDZs7qaB23b33T1AIhsSkpSJ5FuzFLKxdhTpbis9KmbLel5Avdg6QSuDtmbxrwgcBcae6UqC9mBuYTUTUq9-rh86Md0xdegJGiaPur-wT0fepsw3oGJ/s1754/E%20-%20Money%20Custom%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl5 li span {
+  mix-blend-mode: difference;
+}
+ul.sl5 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqhgrllH5DCcCj5ZhjN48UwyYaWo-fMRe3xTkEjTSURaQPSl_sBxBy_o8_0FRwI7lxu7AX496iylfKFczOdSLXJu3OoYXwe8RlREByME0abH67HGFxdb7XFI_zVwHq9QlmgdCkEYTQSZ_T_9WNllxAIZzgYNxj4mInXy3x3aAKif7fQVEYIbI1D7D7VSDU/s1750/E%20-%20Money%20Custom%202.png&#39;);
+}
+ul.sl5 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+ul.sl5 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsl5.frst:checked ~ ul.sl5 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl5.scnd:checked ~ ul.sl5 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl5.thrd:checked ~ ul.sl5 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl5.foth:checked ~ ul.sl5 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl5der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl5 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl5der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl5 li {
+    height: 200px;
+  }
+}
+    
+    
+    
+    /* jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
+    
+    
+    .sectionsl6{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl6{
+  min-height: 5px;
+}
+.over-hidesl6{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl6:checked + label,
+.checkboxsl6:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghBB2hnR8JvJQQo_SfX1aFLXjbenz4y6aX_tVpoEwRC_jRL7MT5UmBvI6d_ze0SpKQQhuzSxShuZfyL49LTja_9HrcNyVkHOGle_UqrEcMPbO2jN8tHXyeRxOwl61tqLl1IqNAWmkbpXmNzAkbbo9YMSQSyGM76e4sjpaQmfBZaSrpAnxmUVfLesK1Kmms/s1750/Photobook%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl6.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8nPVSdRGpmikytJ6r19vZawCC8hMbVftRNc_Ee_WlpKcdzXdY7Vf68COiCCQj7CPkdJRPO8qK7cse1walE01y_dG6qHA2FUfAcDQ3UCcMfCjkexhDXICV0K6Wq3ofQ0GJ_qjbGLfWe_Va-d_po-0lEcZZZCblgmKaTDC3Mkom1wXq86xqoBri7NPiZuF5/s1750/Photobook%202.png&#39;);
+}
+.checkboxsl6.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+.checkboxsl6.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsl6:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl6der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl6 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghBB2hnR8JvJQQo_SfX1aFLXjbenz4y6aX_tVpoEwRC_jRL7MT5UmBvI6d_ze0SpKQQhuzSxShuZfyL49LTja_9HrcNyVkHOGle_UqrEcMPbO2jN8tHXyeRxOwl61tqLl1IqNAWmkbpXmNzAkbbo9YMSQSyGM76e4sjpaQmfBZaSrpAnxmUVfLesK1Kmms/s1750/Photobook%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl6 li span {
+  mix-blend-mode: difference;
+}
+ul.sl6 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8nPVSdRGpmikytJ6r19vZawCC8hMbVftRNc_Ee_WlpKcdzXdY7Vf68COiCCQj7CPkdJRPO8qK7cse1walE01y_dG6qHA2FUfAcDQ3UCcMfCjkexhDXICV0K6Wq3ofQ0GJ_qjbGLfWe_Va-d_po-0lEcZZZCblgmKaTDC3Mkom1wXq86xqoBri7NPiZuF5/s1750/Photobook%202.png&#39;);
+}
+ul.sl6 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+ul.sl6 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsl6.frst:checked ~ ul.sl6 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl6.scnd:checked ~ ul.sl6 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl6.thrd:checked ~ ul.sl6 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl6.foth:checked ~ ul.sl6 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl6der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl6 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl6der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl6 li {
+    height: 200px;
+  }
+}
+    
+    
+    
+    
+    /* dgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg */
+    
+    .sectionsl7{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl7{
+  min-height: 5px;
+}
+.over-hidesl7{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl7:checked + label,
+.checkboxsl7:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaml_mSPScyyKpI6uACmyJgRSZ0UtZVTyd4azIQhyphenhyphensUDRJsIV9JrODlBVt9sS120hQF8-uS30dtejAw_UMYs6fg1keaHlvUssk2Ch9tizlv68_DlScvzubbYDkJStUTxGpD6KK3JJhpuZqgI3HbMiHAIbnaaeh5MY0zXqU2FyOMNolPOFWQPJxdfkjDZFO/s1750/Buku%20Custom%20Binding%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl7.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgymOTGtLQtYjXDRqkX-L0aOnQTY7KWN_KA-0SK_dvpF1wv_r-qEHu2XhEBQGd0WK3Sb2sezsCsKyhee8fZrwdoDJj8MbgRq8NalFd7wieMgWlBiyew72x3QcflXxrZ3H45O9PvPZriWFFj2xrec1vHVSurBs9vBRlGHDylV6-p4s1rPBxBwaYCW3lsMIXb/s1750/Buku%20Custom%20Binding%202.png&#39;);
+}
+.checkboxsl7.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivNN5HwE4qIotVbVAJXycyVhZ26A10XsIN1FqfooEeyrrsx0qhkXLnQfobknO1HGZQZRGLkDUgIucCs7EQLY3Hgyu1IkZJA2g7p3Pjil_FotPBSWTdi0PUesUp_S1xFJ13BBWiEzRImAX0n0-4mK6IuxGHit69fbErUYTJgfTjg53Isp3ZAUyqHHrDy5Jc/s1750/Buku%20Custom%20Binding%203.png&#39;);
+}
+.checkboxsl7.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsl7:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl7der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl7 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaml_mSPScyyKpI6uACmyJgRSZ0UtZVTyd4azIQhyphenhyphensUDRJsIV9JrODlBVt9sS120hQF8-uS30dtejAw_UMYs6fg1keaHlvUssk2Ch9tizlv68_DlScvzubbYDkJStUTxGpD6KK3JJhpuZqgI3HbMiHAIbnaaeh5MY0zXqU2FyOMNolPOFWQPJxdfkjDZFO/s1750/Buku%20Custom%20Binding%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl7 li span {
+  mix-blend-mode: difference;
+}
+ul.sl7 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgymOTGtLQtYjXDRqkX-L0aOnQTY7KWN_KA-0SK_dvpF1wv_r-qEHu2XhEBQGd0WK3Sb2sezsCsKyhee8fZrwdoDJj8MbgRq8NalFd7wieMgWlBiyew72x3QcflXxrZ3H45O9PvPZriWFFj2xrec1vHVSurBs9vBRlGHDylV6-p4s1rPBxBwaYCW3lsMIXb/s1750/Buku%20Custom%20Binding%202.png&#39;);
+}
+ul.sl7 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivNN5HwE4qIotVbVAJXycyVhZ26A10XsIN1FqfooEeyrrsx0qhkXLnQfobknO1HGZQZRGLkDUgIucCs7EQLY3Hgyu1IkZJA2g7p3Pjil_FotPBSWTdi0PUesUp_S1xFJ13BBWiEzRImAX0n0-4mK6IuxGHit69fbErUYTJgfTjg53Isp3ZAUyqHHrDy5Jc/s1750/Buku%20Custom%20Binding%203.png&#39;);
+}
+ul.sl7 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsl7.frst:checked ~ ul.sl7 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl7.scnd:checked ~ ul.sl7 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl7.thrd:checked ~ ul.sl7 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl7.foth:checked ~ ul.sl7 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl7der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl7 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl7der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl7 li {
+    height: 200px;
+  }
+}
+    
+  /* kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk */
+    
+    
+    
+   .sectionsl8{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl8{
+  min-height: 5px;
+}
+.over-hidesl8{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl8:checked + label,
+.checkboxsl8:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXKypfIuRsdbpoe1miE_IpQ-Hy3STVJ2Bu3MILNLkkh-N3xGVc_hfnFr__sD-Ux5iCFK1_mSTZCtA2O8I-EonpdgtTWoB5yRBC2GaSAM0T6hyphenhyphenQ9QawD9Stksb3oQCu4tTPd2zecJVMxXHSyvooYTKfF70MObXeg8EUf7OpyL6xwKgqtxONYOInCnW_ThUH/s1750/Buku%20Spiral%20Custom%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl8.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_BNo5CUu4NkwEnaliL6FkRsmlNTprTt4oY1SpV1yR_KJ9Lkicz-_NACRqrWPgWJjVaDLVlzgWd6421obmF1B6sRD7ZP5AUv0oB1XVrKVVwKF2bqF8oMNIDwqjquCifOMB586XKQA4-4p02VxTN1IRCZcHbsU3JdQFa06nW1fLCl76GDrw0W4d-71PaXUl/s1750/Buku%20Spiral%20Custom%202.png&#39;);
+}
+.checkboxsl8.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+.checkboxsl8.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsl8:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl8der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl8 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXKypfIuRsdbpoe1miE_IpQ-Hy3STVJ2Bu3MILNLkkh-N3xGVc_hfnFr__sD-Ux5iCFK1_mSTZCtA2O8I-EonpdgtTWoB5yRBC2GaSAM0T6hyphenhyphenQ9QawD9Stksb3oQCu4tTPd2zecJVMxXHSyvooYTKfF70MObXeg8EUf7OpyL6xwKgqtxONYOInCnW_ThUH/s1750/Buku%20Spiral%20Custom%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl8 li span {
+  mix-blend-mode: difference;
+}
+ul.sl8 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_BNo5CUu4NkwEnaliL6FkRsmlNTprTt4oY1SpV1yR_KJ9Lkicz-_NACRqrWPgWJjVaDLVlzgWd6421obmF1B6sRD7ZP5AUv0oB1XVrKVVwKF2bqF8oMNIDwqjquCifOMB586XKQA4-4p02VxTN1IRCZcHbsU3JdQFa06nW1fLCl76GDrw0W4d-71PaXUl/s1750/Buku%20Spiral%20Custom%202.png&#39;);
+}
+ul.sl8 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+ul.sl8 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsl8.frst:checked ~ ul.sl8 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl8.scnd:checked ~ ul.sl8 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl8.thrd:checked ~ ul.sl8 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl8.foth:checked ~ ul.sl8 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl8der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl8 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl8der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl8 li {
+    height: 200px;
+  }
+}
+    
+    
+    /* llllllllllllllllllllllllllllllllllllllllllllllllllllll */
+    
+    .sectionsl9{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl9{
+  min-height: 5px;
+}
+.over-hidesl9{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl9:checked + label,
+.checkboxsl9:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAca3qvdRP8pNmLY85-Mmhq7s93ndLvx7gmlruiA7MMPtGVSrXLI6ZgscPZ56qLhTixaviLmwe4jSxf3R5pkTZipy-YcBReNokGprRtSkc7YH3KUv6uVMIaW3p4kxsyt6DSSQDqJbTPQCY0CwQk-xsL7o3Fwx0BVKhYzf9YqCYkOjdihXc-6f5kffUTQ1h/s1750/Yearbook%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl9.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkImn41ZptooUTs47Xp51M52rhDJZGAVNDgmRRuPyz9urcsCqyo7bkIbFxNyRjNXgloBvxqBfQOUtc1jcD4IEw1D1f4b5wdX38DeVUuiKxneeA5wgPESkSO933qVijPM1aZnCbVZ0OZdnlKqB1jWYOWJ98HEZb-rTiAGUUlLCWliT1T4F0B8YTpnM_QBfT/s1750/Yearbook%202.png&#39;);
+}
+.checkboxsl9.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+.checkboxsl9.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsl9:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl9der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl9 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAca3qvdRP8pNmLY85-Mmhq7s93ndLvx7gmlruiA7MMPtGVSrXLI6ZgscPZ56qLhTixaviLmwe4jSxf3R5pkTZipy-YcBReNokGprRtSkc7YH3KUv6uVMIaW3p4kxsyt6DSSQDqJbTPQCY0CwQk-xsL7o3Fwx0BVKhYzf9YqCYkOjdihXc-6f5kffUTQ1h/s1750/Yearbook%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl9 li span {
+  mix-blend-mode: difference;
+}
+ul.sl9 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkImn41ZptooUTs47Xp51M52rhDJZGAVNDgmRRuPyz9urcsCqyo7bkIbFxNyRjNXgloBvxqBfQOUtc1jcD4IEw1D1f4b5wdX38DeVUuiKxneeA5wgPESkSO933qVijPM1aZnCbVZ0OZdnlKqB1jWYOWJ98HEZb-rTiAGUUlLCWliT1T4F0B8YTpnM_QBfT/s1750/Yearbook%202.png&#39;);
+}
+ul.sl9 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+ul.sl9 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsl9.frst:checked ~ ul.sl9 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl9.scnd:checked ~ ul.sl9 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl9.thrd:checked ~ ul.sl9 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl9.foth:checked ~ ul.sl9 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl9der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl9 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl9der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl9 li {
+    height: 200px;
+  }
+}
+    
+    
+    /* qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq */
+    
+    
+    
+    .sectionsl10{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl10{
+  min-height: 5px;
+}
+.over-hidesl10{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl10:checked + label,
+.checkboxsl10:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWrpCY7AQRmZlH4cJgXOCFP8woLrz8a_5MglcK_gbgdRTPWHvErmx5vNfVQhgKH07GWnroemnZKqhC0lb_wp1VAS9AuSfAEt3arTws8z1CkLs6fisT7Tmromv0Wc8DS4gO1yHa7OhDyYf5R17oZIrorGe4ouEXyLLayzEo1G7mtcjXu35klO2bAu44lzxF/s1754/Kalender%20Meja%20Penyangga%20Linen%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl10.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_TXd8MciJZbd71SyTfiT0BzzX_dhmIE4b8LWXouPVGQtdGjcTVg8tSMWav2-1QLy8A6eDb_p-zhquVyn7Q4Tzuti8BBvp1f7pBxRdS3808eNG4cw4uNe6lA-oEOkwkII3hDfcxiFLHkM9uQvTxpX_0UtTPF26tj53k10iVOp941rvjVr6tCCgeY5dlPqK/s1754/Kalender%20Meja%20Penyangga%20Linen%202.png&#39;);
+}
+.checkboxsl10.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+.checkboxsl10.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsl10:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl10der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl10 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWrpCY7AQRmZlH4cJgXOCFP8woLrz8a_5MglcK_gbgdRTPWHvErmx5vNfVQhgKH07GWnroemnZKqhC0lb_wp1VAS9AuSfAEt3arTws8z1CkLs6fisT7Tmromv0Wc8DS4gO1yHa7OhDyYf5R17oZIrorGe4ouEXyLLayzEo1G7mtcjXu35klO2bAu44lzxF/s1754/Kalender%20Meja%20Penyangga%20Linen%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl10 li span {
+  mix-blend-mode: difference;
+}
+ul.sl10 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_TXd8MciJZbd71SyTfiT0BzzX_dhmIE4b8LWXouPVGQtdGjcTVg8tSMWav2-1QLy8A6eDb_p-zhquVyn7Q4Tzuti8BBvp1f7pBxRdS3808eNG4cw4uNe6lA-oEOkwkII3hDfcxiFLHkM9uQvTxpX_0UtTPF26tj53k10iVOp941rvjVr6tCCgeY5dlPqK/s1754/Kalender%20Meja%20Penyangga%20Linen%202.png&#39;);
+}
+ul.sl10 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+ul.sl10 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsl10.frst:checked ~ ul.sl10 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl10.scnd:checked ~ ul.sl10 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl10.thrd:checked ~ ul.sl10 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl10.foth:checked ~ ul.sl10 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl10der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl10 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl10der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl10 li {
+    height: 200px;
+  }
+}
+    
+    /* dgssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */
+    
+    
+    .sectionsl11{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl11{
+  min-height: 5px;
+}
+.over-hidesl11{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl11:checked + label,
+.checkboxsl11:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhITkCSdZxmDTkyAw5Rdg4T5tWyR8FQs8nm71fRjgPs0eG_iwuvUD-a6XRT0QH1lQCsOSawBmev15lqRQZVlnk2TboGgJs69IpdWqPoMPGyW6LaUY83QdrbkOsCb5W4N4A9sj-nwBzLb5tWKyIuK9gpMQKiYtSpU3NiJmXzUKX8hNcxe1VoYqcugR1aaalQ/s1750/Undangan%20Minimalis%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl11.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-kTq0gKLMLYMt9BykkPg-D2AFIDVlrMEN3okx-VNdPQL06MJogDFRAGXS-12KLWvwBDztk1_D9D6QUDj34rTEcgwQsNIlju3sAM4F79dvYwqCCMBtApfZlJOTgqQZSWmVeIeA3t4PhhY2a8ECfzJWg2KvCDwqUGIfdIyMTT_xpcMOUUyANpQn-9a90zR/s1750/Undangan%20Minimalis%202.png&#39;);
+}
+.checkboxsl11.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+.checkboxsl11.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsl11:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl11der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl11 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhITkCSdZxmDTkyAw5Rdg4T5tWyR8FQs8nm71fRjgPs0eG_iwuvUD-a6XRT0QH1lQCsOSawBmev15lqRQZVlnk2TboGgJs69IpdWqPoMPGyW6LaUY83QdrbkOsCb5W4N4A9sj-nwBzLb5tWKyIuK9gpMQKiYtSpU3NiJmXzUKX8hNcxe1VoYqcugR1aaalQ/s1750/Undangan%20Minimalis%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl11 li span {
+  mix-blend-mode: difference;
+}
+ul.sl11 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-kTq0gKLMLYMt9BykkPg-D2AFIDVlrMEN3okx-VNdPQL06MJogDFRAGXS-12KLWvwBDztk1_D9D6QUDj34rTEcgwQsNIlju3sAM4F79dvYwqCCMBtApfZlJOTgqQZSWmVeIeA3t4PhhY2a8ECfzJWg2KvCDwqUGIfdIyMTT_xpcMOUUyANpQn-9a90zR/s1750/Undangan%20Minimalis%202.png&#39;);
+}
+ul.sl11 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+ul.sl11 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsl11.frst:checked ~ ul.sl11 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl11.scnd:checked ~ ul.sl11 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl11.thrd:checked ~ ul.sl11 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl11.foth:checked ~ ul.sl11 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl11der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl11 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl11der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl11 li {
+    height: 200px;
+  }
+}
+    
+    
+    /* sl122222222222222222222222222222222222222222222222222222222 */
+    
+    
+    .sectionsl12{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl12{
+  min-height: 5px;
+}
+.over-hidesl12{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl12:checked + label,
+.checkboxsl12:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9GZCmm_-El0oBEXVEyOI4VXXgxyOhqU8ItwwmM15YT5SLBCgf1yCxE2Oi91AAZ88rYtgCdrqubvbHE249WgHL7ctz6KTe92ed-jYsdCjUKVMGQuKunanYpMdFys554VstLXkh_aWCZZjzFqIBN9FQSNc85oKAgyxrk6AWQfXk_QcxjSNS9DjJk9Ax3Lno/s1754/Undangan%20Hardcover%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl12.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw4qLmN_rO1gjF_EtbRmoBr73YqyburtKGcUVeCOkk1LlFKaNsR2kebWmqhe9z8ODahspUoklUCwZEqqUysJI93a47ufbQFQq3y3lgrw8rNO-pQ226NsZ0GKoSVyCQQVKsT75lNZ88VFYa3-zm8Wx8mjt0FAis4h-lr-Tb02Lj7RQrsoiZ6yFyAjK52kI5/s1750/Undangan%20Hardcover%2022.png&#39;);
+}
+.checkboxsl12.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+.checkboxsl12.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsl12:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl12der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl12 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9GZCmm_-El0oBEXVEyOI4VXXgxyOhqU8ItwwmM15YT5SLBCgf1yCxE2Oi91AAZ88rYtgCdrqubvbHE249WgHL7ctz6KTe92ed-jYsdCjUKVMGQuKunanYpMdFys554VstLXkh_aWCZZjzFqIBN9FQSNc85oKAgyxrk6AWQfXk_QcxjSNS9DjJk9Ax3Lno/s1754/Undangan%20Hardcover%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl12 li span {
+  mix-blend-mode: difference;
+}
+ul.sl12 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw4qLmN_rO1gjF_EtbRmoBr73YqyburtKGcUVeCOkk1LlFKaNsR2kebWmqhe9z8ODahspUoklUCwZEqqUysJI93a47ufbQFQq3y3lgrw8rNO-pQ226NsZ0GKoSVyCQQVKsT75lNZ88VFYa3-zm8Wx8mjt0FAis4h-lr-Tb02Lj7RQrsoiZ6yFyAjK52kI5/s1750/Undangan%20Hardcover%2022.png&#39;);
+}
+ul.sl12 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+ul.sl12 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsl12.frst:checked ~ ul.sl12 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl12.scnd:checked ~ ul.sl12 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl12.thrd:checked ~ ul.sl12 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl12.foth:checked ~ ul.sl12 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl12der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl12 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl12der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl12 li {
+    height: 200px;
+  }
+}
+    
+    /* sl1333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+    
+    
+    .sectionsl13{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl13{
+  min-height: 5px;
+}
+.over-hidesl13{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl13:checked + label,
+.checkboxsl13:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiTKopFnTXAMzXZO0vIySs2qsAgipqd3qxtcIxTdVPC2PI1yy6xQtwZ7i6JbQw5oJNdd3zz0u4nGdOVWlhcElRBeKjrylXaGa97TUo4xFHwhyphenhyphenBtvp0Aafd_kwnPIeCE7_LtCpx4TqDnJBjk4RUOUIG3KwzdbDaYjiwDRyotIsfzpVfXsPZzU2UrP5wfdHL/s1750/Branding%20Kaca%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl13.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTGvY6HYQ9xXFv8JN5RGBmgcLqGr-qmcfAqHx5oQaxIn2RHsSHbhQlGZEmeDPMaj5B_DrdfYCuSTz9mA-ozY53tXtsuCx7KdcdZQhoBDNARaduv6iRU2byn5nbXkDUUCu2My_ScRR-VFFjqdjhs1bQcWolkpjxUj05O8aWsDCSk5aq21WliAf2lO1J-iQE/s1750/Branding%20Kaca%202.png&#39;);
+}
+.checkboxsl13.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+.checkboxsl13.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsl13:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl13der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl13 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl13 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiTKopFnTXAMzXZO0vIySs2qsAgipqd3qxtcIxTdVPC2PI1yy6xQtwZ7i6JbQw5oJNdd3zz0u4nGdOVWlhcElRBeKjrylXaGa97TUo4xFHwhyphenhyphenBtvp0Aafd_kwnPIeCE7_LtCpx4TqDnJBjk4RUOUIG3KwzdbDaYjiwDRyotIsfzpVfXsPZzU2UrP5wfdHL/s1750/Branding%20Kaca%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl13 li span {
+  mix-blend-mode: difference;
+}
+ul.sl13 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTGvY6HYQ9xXFv8JN5RGBmgcLqGr-qmcfAqHx5oQaxIn2RHsSHbhQlGZEmeDPMaj5B_DrdfYCuSTz9mA-ozY53tXtsuCx7KdcdZQhoBDNARaduv6iRU2byn5nbXkDUUCu2My_ScRR-VFFjqdjhs1bQcWolkpjxUj05O8aWsDCSk5aq21WliAf2lO1J-iQE/s1750/Branding%20Kaca%202.png&#39;);
+}
+ul.sl13 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+ul.sl13 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsl13.frst:checked ~ ul.sl13 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl13.scnd:checked ~ ul.sl13 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl13.thrd:checked ~ ul.sl13 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl13.foth:checked ~ ul.sl13 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl13der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl13 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl13der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl13 li {
+    height: 200px;
+  }
+}
+    
+    /* sl14444444444444444444444444444444444444444444444444444444444444444444444 */
+    
+    
+    .sectionsl14{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl14{
+  min-height: 5px;
+}
+.over-hidesl14{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl14:checked + label,
+.checkboxsl14:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEMwnpIQpaXsDBQzhoJ8xITOpZADW61jNBgMvr96rov06M6BVJIz12ixtz5FmjKbfxBD-mhNw6_IKZ-ZcR32JM2AJxXAsFUnnH7ezLFJWFocLrz1UuPVTzQT7pew58kcNi7sed5De5JFB-VifQ3iqBQZhscE5OTtHdwRObA07EnxamfLvv7oIpLADLlWCa/s1750/Branding%20Rak%20Gondola%202.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl14.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieuiooBbaSYTghRDudsx3finSVDYqWUZgIN39i146_44Hx7wgFz_fUQs3OWBNBg1ebvpP1h1CaKVhID9QEAlsChmMdpk1SxctuFoQ0kJp_P7X3xGGTQgHM3F4xK4jSAZXHig9_xq4zQgNj6aK4oGicFUEbb0e5NLBaYbJkOISnJeztxLiOOBuv0mSZGvLm/s1750/Branding%20Rak%20Gondola.png&#39;);
+}
+.checkboxsl14.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+.checkboxsl14.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+.checkboxsl14:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl14der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl14 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl14 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEMwnpIQpaXsDBQzhoJ8xITOpZADW61jNBgMvr96rov06M6BVJIz12ixtz5FmjKbfxBD-mhNw6_IKZ-ZcR32JM2AJxXAsFUnnH7ezLFJWFocLrz1UuPVTzQT7pew58kcNi7sed5De5JFB-VifQ3iqBQZhscE5OTtHdwRObA07EnxamfLvv7oIpLADLlWCa/s1750/Branding%20Rak%20Gondola%202.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl14 li span {
+  mix-blend-mode: difference;
+}
+ul.sl14 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieuiooBbaSYTghRDudsx3finSVDYqWUZgIN39i146_44Hx7wgFz_fUQs3OWBNBg1ebvpP1h1CaKVhID9QEAlsChmMdpk1SxctuFoQ0kJp_P7X3xGGTQgHM3F4xK4jSAZXHig9_xq4zQgNj6aK4oGicFUEbb0e5NLBaYbJkOISnJeztxLiOOBuv0mSZGvLm/s1750/Branding%20Rak%20Gondola.png&#39;);
+}
+ul.sl14 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcJax2ueraN6kKzn2-L_fr8P0o4aavKwcMWsD7qbFEN-EFeY5Z1jVi4oG8_e2nQqO36YOLl1CtQcKC75B6JEVogwB_DmQwtr2mQT6I-_8uPxjgKGoXB9nhGNZhrCa9p37lfPliKIlm7j91vn8BWFNK4lly2t5mOCiikvsQnq96J-8quoTeq-97kn6z651E/s1750/Tas%20Spunbon.png&#39;);
+}
+ul.sl14 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_YvRjg_LbgL77IYiUP56zGAyO-ASLkIlb8RNGpwwM_gYr-1pob-5TIQ3Z6oTWAri22up1GEd9xtUP9ThlwCg9xxIUFyO5jTWV9rugo_Kq8PVWHdZQ7MZb5LKjgvqKkKpCfaKBTAwUdThRBWyFimEOIBqXznZVELzjNykDWGJTLlfBS77wFTlP2YyYgaU/s600/brosur%204.png&#39;);
+}
+
+
+.checkboxsl14.frst:checked ~ ul.sl14 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl14.scnd:checked ~ ul.sl14 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl14.thrd:checked ~ ul.sl14 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl14.foth:checked ~ ul.sl14 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl14der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl14 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl14der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl14 li {
+    height: 200px;
+  }
+}
+    
+    /* SL1555555555555555555555555555555555555555555555555 */
+    
+    
+    .sectionsl15{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-heightsl15{
+  min-height: 5px;
+}
+.over-hidesl15{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 0;
+}
+[type=&quot;radio&quot;]:checked,
+[type=&quot;radio&quot;]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkboxsl15:checked + label,
+.checkboxsl15:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7cwUsdJEyHUcXB74bylcHd4jDta8Hgw5564melIry_a2wjs1MvlPd1xCnkUGrBqLm078LTizs0SrJ3DxVZ7hLHSyp_dqMh3FpoGuOAMUV9wO0a14IZ3YZyGEQg7KfTZWTELZuwCaO6s0EdSQj_6r17mIt-EeLtP0HHNXp3wp4ofqI8c_OfCB9ExAsNzta/s1754/Branding%20Rak%20Display%201.png&#39;);
+  animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.checkboxsl15.scnd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPFtCs3uld_0igzV2GZhTyqe91w3EBrbLRJQtrWgzyrgoRluejLdeR2HDD7IblnHOsFVaJL3M4wDwOHQakUl_8GuOKQL-xi-QKCUpflBgpqaIvkqYq7B_WJTTxCWrpoMkjuHeNCeEQ8lTIbj1uDWkohc6Lnuc6HKKx_YdFhzHyvgst6P6G2fJzzprRmw73/s1750/Branding%20Rak%20Display%202.png&#39;);
+}
+.checkboxsl15.thrd + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir_bXA0q1njcOftT8dKmJG_my-QjKpou67OwukkCOyhyphenhyphentZxMjZoXtUSgaEfA3kTOkw00A7NlMQzETE-LPOvgI9UeirhrEaH89KAq1xG-IizpF9DKBy8-Om2aeLpiX1Kq1KfaiZ8a-8aPuVe7D8RLMxArGGNDJnx32INqC_D8mwzGA8T4rHsfoFxmVwvhVr/s1754/Branding%20Rak%20Display%203.png&#39;);
+}
+.checkboxsl15.foth + label{
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq3zu6tzX43wngV2JxDOzTNiCXDnnsw0L75XSm65resCPGkbjR6fdSLlSdX7nP_EbM5bHuIhAQbMosmb2XIi74xJ6mxF8JSHI9xIG95paH_Yzq-hrCyc0xfH_6-LexzopXeyoJWNZyUKhy-gCMgvKRWLXnZ5CFmDhsWJuE1Im1tlwCk8q3Ow6L1kzVcSid/s1750/Branding%20Rak%20Display%204.png&#39;);
+}
+
+.checkboxsl15:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.sl15der-height-padding {
+  padding-top: 440px;
+}
+
+ul.sl15 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60%;
+   
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+    
+  list-style: none;
+}
+ul.sl15 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  height: 400px;
+  border: 5px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7cwUsdJEyHUcXB74bylcHd4jDta8Hgw5564melIry_a2wjs1MvlPd1xCnkUGrBqLm078LTizs0SrJ3DxVZ7hLHSyp_dqMh3FpoGuOAMUV9wO0a14IZ3YZyGEQg7KfTZWTELZuwCaO6s0EdSQj_6r17mIt-EeLtP0HHNXp3wp4ofqI8c_OfCB9ExAsNzta/s1754/Branding%20Rak%20Display%201.png&#39;);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: &#39;Poppins&#39;, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ul.sl15 li span {
+  mix-blend-mode: difference;
+}
+ul.sl15 li:nth-child(2) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPFtCs3uld_0igzV2GZhTyqe91w3EBrbLRJQtrWgzyrgoRluejLdeR2HDD7IblnHOsFVaJL3M4wDwOHQakUl_8GuOKQL-xi-QKCUpflBgpqaIvkqYq7B_WJTTxCWrpoMkjuHeNCeEQ8lTIbj1uDWkohc6Lnuc6HKKx_YdFhzHyvgst6P6G2fJzzprRmw73/s1750/Branding%20Rak%20Display%202.png&#39;);
+}
+ul.sl15 li:nth-child(3) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir_bXA0q1njcOftT8dKmJG_my-QjKpou67OwukkCOyhyphenhyphentZxMjZoXtUSgaEfA3kTOkw00A7NlMQzETE-LPOvgI9UeirhrEaH89KAq1xG-IizpF9DKBy8-Om2aeLpiX1Kq1KfaiZ8a-8aPuVe7D8RLMxArGGNDJnx32INqC_D8mwzGA8T4rHsfoFxmVwvhVr/s1754/Branding%20Rak%20Display%203.png&#39;);
+}
+ul.sl15 li:nth-child(4) {
+  background-image: url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq3zu6tzX43wngV2JxDOzTNiCXDnnsw0L75XSm65resCPGkbjR6fdSLlSdX7nP_EbM5bHuIhAQbMosmb2XIi74xJ6mxF8JSHI9xIG95paH_Yzq-hrCyc0xfH_6-LexzopXeyoJWNZyUKhy-gCMgvKRWLXnZ5CFmDhsWJuE1Im1tlwCk8q3Ow6L1kzVcSid/s1750/Branding%20Rak%20Display%204.png&#39;);
+}
+
+
+.checkboxsl15.frst:checked ~ ul.sl15 li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl15.scnd:checked ~ ul.sl15 li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl15.thrd:checked ~ ul.sl15 li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkboxsl15.foth:checked ~ ul.sl15 li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .sl15der-height-padding {
+    padding-top: 340px;
+  }
+  ul.sl15 li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sl15der-height-padding {
+    padding-top: 240px;
+  }
+  ul.sl15 li {
+    height: 200px;
+  }
+}
